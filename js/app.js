@@ -9,6 +9,17 @@ function addAlert(){
 
 //2. Add an event to the div element with the id of 'name1' that will show/hide the description ('descrip1') after hovering over Air Jordan II.
 
+let name1Desc = document.querySelector('#name1');
+name1Desc.addEventListener('mouseover', showDesc1);
+
+function showDesc1(){
+   if (descrip1.style.display === 'none'){
+       descrip1.style.display ='block'
+   }else {
+       descrip1.style.display = 'none';
+   }
+}
+
 //3. Add an event to the div element with the id of 'name2' that will show/hide the following description after clicking on the element.
 //'The instantly recognizable Jumpman silhouette made its debut with the Air Jordan 3 during Michael Jordan's 1987-88 NBA season.'
 
