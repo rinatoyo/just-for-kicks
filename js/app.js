@@ -23,10 +23,28 @@ function showDesc1(){
 //3. Add an event to the div element with the id of 'name2' that will show/hide the following description after clicking on the element.
 //'The instantly recognizable Jumpman silhouette made its debut with the Air Jordan 3 during Michael Jordan's 1987-88 NBA season.'
 
-
 //You'll need to:
 // create a div element with an id of 'descrip2'
 //append this element to the div element with the id of 'name2' 
+
+let div2 = document.createElement('div');
+
+div2.id = 'descrip2';
+
+div2.textContent = "The instantly recognizable Jumpman silhouette made its debut with the Air Jordan 3 during Michael Jordan's 1987-88 NBA season.";
+
+name2.appendChild(div2);
+
+let name2Desc = document.querySelector('#name2');
+name2Desc.addEventListener('click', showDesc2);
+
+function showDesc2(){
+    if (div2.style.display === 'block'){
+        div2.style.display = 'none';
+    }else{
+        div2.style.display = 'block';
+    }
+}
 
 //4. Add events to the all the thumbs up icon that will add a count for each time the icon is clicked on for any shoe.
 
