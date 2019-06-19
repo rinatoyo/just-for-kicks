@@ -66,6 +66,15 @@ function counter(){
 
 //5. Add an event to the plus icon that will increment the price of the Air Jordan V shoe each time the icon is clicked on.
 
+let plusSign = document.querySelector('#increase');
+
+plusSign.addEventListener('click', priceUp);
+
+function priceUp(){
+    let priceText = document.querySelector('#price4');
+    console.log(priceText.childNodes);
+    priceText.childNodes[0].nodeValue++;
+}
 
 
 //6. Add an event to the minus icon that will decrement the price of the Air Jordan VI shoe each time the icon is clicked on.
