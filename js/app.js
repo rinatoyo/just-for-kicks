@@ -90,6 +90,12 @@ function priceDwn(){
 
 //7. Add an event to the Air Jordan XI shoe that will show another colorway for that shoe after hovering over the image. 
 
+let newColor = document.querySelector('#name6').parentElement.firstChild.addEventListener('mouseover', blackColor);
+
+function blackColor(){
+    this.src = 'https://www.flightclub.com/media/catalog/product/cache/1/image/1600x1140/9df78eab33525d08d6e5fb8d27136e95/0/1/012597_1.jpg';
+}
+
 //8. Add an event to the Air Jordan XII shoe that will increase the image by 50% after clicking on the image.
 
 //9. Add events to both the plus and minus icon that will add or decrease the price each time the respective icon is clicked on.
