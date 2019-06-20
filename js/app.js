@@ -76,8 +76,17 @@ function priceUp(){
     priceText.childNodes[0].nodeValue++;
 }
 
-
 //6. Add an event to the minus icon that will decrement the price of the Air Jordan VI shoe each time the icon is clicked on.
+
+let minusSign = document.querySelector('#decrease');
+
+minusSign.addEventListener('click', priceDwn);
+
+function priceDwn(){
+    let priceText2 = document.querySelector('#price5');
+    console.log(priceText2.childNodes);
+    priceText2.childNodes[0].nodeValue--;
+}
 
 //7. Add an event to the Air Jordan XI shoe that will show another colorway for that shoe after hovering over the image. 
 
